@@ -10,6 +10,10 @@
     text-align: center;
 }
 
+.navbar a:hover {
+    cursor: pointer;
+}
+
 .nav-item {
     padding: 1rem;
     color: white;
