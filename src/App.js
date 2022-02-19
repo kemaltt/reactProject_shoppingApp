@@ -18,6 +18,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />{" "}
+            <Route path="/reactProject_shoppingApp/" element={<HomePage />} />{" "}
             <Route path="/favorites" element={<Favorites />} />{" "}
             <Route path="/login" element={<Login />} />{" "}
             <Route path="/signup" element={<Register />} />{" "}

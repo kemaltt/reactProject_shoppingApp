@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const handleLogOut = () => {
     signOut(auth);
-    navigate("/homepage");
+    navigate("/");
   };
 
   return (
