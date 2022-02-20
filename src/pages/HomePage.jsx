@@ -18,6 +18,13 @@ export default function HomePage() {
       let filteredData = data.filter((el) => el.category == category);
       setTotalData(filteredData);
     }
+
+    if (currentUser) {
+      setTotalData(data);
+    } else {
+      alert("Please login to make a search ");
+      setTotalData(data);
+    }
   };
 
   return (

@@ -1,21 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 export default function Input({ handleCategory }) {
   const [category, setCategory] = useState("Choose...");
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   if (searchTerm == "Choose...") {
-  //     navigate("/");
-  //   }
-  //   if (currentUser) {
-  //     setSerachQuery(searchTerm);
-  //   } else {
-  //     alert("Please login to make a search ");
-  //   }
-  //   setSearchTerm("");
-  // };
 
   return (
     <div>
@@ -35,10 +21,10 @@ export default function Input({ handleCategory }) {
             aria-label="Example select with button addon"
           >
             <option selected>Choose...</option>
-            <option value="men's clothing">men's clothing</option>
-            <option value="women's clothing">women's clothing</option>
-            <option value="electronics">electronics</option>
-            <option value="jewelery">jewelery</option>
+            <option value="men's clothing">Men's clothing</option>
+            <option value="women's clothing">Women's clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
           </select>
           <div className="input-group-append">
             <button className="btn btn-outline-primary" type="submit">
