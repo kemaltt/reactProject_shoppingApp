@@ -152,6 +152,12 @@
     cursor: pointer;
 }
 
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 /* .card:hover {
     filter: grayscale(80%);

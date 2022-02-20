@@ -26,6 +26,7 @@ export default function Login() {
           <img
             src={"https://picsum.photos/800/800"}
             className="img-fluid "
+            // className="img "
             alt="photo"
           />
         </div>
