@@ -12,15 +12,14 @@ export default function HomePage() {
 
   const handleCategory = (e, category) => {
     e.preventDefault();
-    if (category == "Choose...") {
-      setTotalData(data);
-    } else {
-      let filteredData = data.filter((el) => el.category == category);
-      setTotalData(filteredData);
-    }
 
     if (currentUser) {
-      setTotalData(data);
+      if (category == "Choose...") {
+        setTotalData(data);
+      } else {
+        let filteredData = data.filter((el) => el.category == category);
+        setTotalData(filteredData);
+      }
     } else {
       alert("Please login to make a search ");
       setTotalData(data);
