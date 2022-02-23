@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Favorites from "./pages/Favorites";
 import { AuthContextProvider } from "./context/AuthContext";
 import Search from "./components/Input";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<HomePage />} />{" "}
             <Route path="/reactProject_shoppingApp/" element={<HomePage />} />{" "}
             <Route path="/favorites" element={<Favorites />} />{" "}
+            <Route path="/cart" element={<Cart />} />{" "}
             <Route path="/login" element={<Login />} />{" "}
             <Route path="/signup" element={<Register />} />{" "}
           </Routes>{" "}

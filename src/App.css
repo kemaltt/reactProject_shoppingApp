@@ -148,7 +148,7 @@
     padding: 1rem;
 }
 
-.icon:hover {
+svg {
     cursor: pointer;
 }
 

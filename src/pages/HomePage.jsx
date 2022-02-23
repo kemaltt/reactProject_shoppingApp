@@ -4,6 +4,7 @@ import ProductCard from "../components/ProductCard";
 import { data } from "../data";
 import AuthContext from "../context/AuthContext";
 import Input from "../components/Input";
+import Favorites from "./Favorites";
 
 export default function HomePage() {
   const [totalData, setTotalData] = useState(data);
@@ -32,7 +33,7 @@ export default function HomePage() {
 
       <div className="card-container">
         {totalData.map((obj) => {
-          console.log(obj);
+          // console.log(obj);
           return (
             <ProductCard
               category={obj.category}

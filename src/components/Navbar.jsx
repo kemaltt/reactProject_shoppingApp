@@ -29,13 +29,20 @@ export default function Navbar() {
           </li>
           <li
             onClick={() => {
-              navigate("/favorites");
+              currentUser ? navigate("/favorites") : navigate("/login");
             }}
             className="nav-item"
           >
             Favorites
           </li>
-          <li className="nav-item">Cart</li>
+          <li
+            onClick={() => {
+              currentUser ? navigate("/cart") : navigate("/login");
+            }}
+            className="nav-item"
+          >
+            Cart
+          </li>
 
           {currentUser ? (
             <div className="d-flex align-items-center">
@@ -48,7 +55,7 @@ export default function Navbar() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
-                fill="yellow"
+                fill="white"
                 className="logout-btn bi bi-box-arrow-right"
                 viewBox="0 0 16 16"
               >
