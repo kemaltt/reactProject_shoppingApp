@@ -22,7 +22,7 @@ function App() {
             <Route path="/reactProject_shoppingApp/" element={<HomePage />} />{" "}
             <Route path="/favorites" element={<Favorites />} />{" "}
             <Route path="/cart" element={<Cart />} />{" "}
-            <Route path="/login" element={<Login />} />{" "}
+            <Route path="/reactProject_shoppingApp/login" element={<Login />} />{" "}
             <Route path="/signup" element={<Register />} />{" "}
           </Routes>{" "}
         </AuthContextProvider>{" "}
