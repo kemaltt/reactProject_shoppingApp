@@ -18,14 +18,11 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light d-flex align-items-center justify-content-between">
         <a className="navbar-brand text-white">Shopping App</a>
 
-        <div className="navbar-list  d-flex   ">
-          <li
-            onClick={() => {
-              navigate("/");
-            }}
-            className="nav-item"
-          >
-            Home
+        <div className="navbar-list d-flex">
+          <li className="nav-item ">
+            <a className="nav-link " href="/">
+              Home
+            </a>
           </li>
           <li
             onClick={() => {
@@ -33,7 +30,9 @@ export default function Navbar() {
             }}
             className="nav-item"
           >
-            Favorites
+            <a className="nav-link " href="#">
+              Favorites
+            </a>
           </li>
           <li
             onClick={() => {
@@ -41,12 +40,14 @@ export default function Navbar() {
             }}
             className="nav-item"
           >
-            Cart
+            <a className="nav-link" href="#">
+              Cart
+            </a>
           </li>
 
           {currentUser ? (
             <div className="d-flex align-items-center">
-              <li className="nav-item1 text-capitalize text-light ml-3 ">
+              <li className="nav-item1 text-capitalize text-light mr-2 ">
                 {currentUser.displayName}
               </li>
 
@@ -71,21 +72,15 @@ export default function Navbar() {
             </div>
           ) : (
             <>
-              <li
-                onClick={() => {
-                  navigate("/login");
-                }}
-                className="nav-item"
-              >
-                Login
+              <li className="nav-item ">
+                <a className="nav-link" href="/login">
+                  Login
+                </a>
               </li>
-              <li
-                onClick={() => {
-                  navigate("/signup");
-                }}
-                className="nav-item"
-              >
-                Register
+              <li className="nav-item ">
+                <a className="nav-link" href="/signup">
+                  Sign Up
+                </a>
               </li>
             </>
           )}

@@ -50,7 +50,7 @@ export default function ProductCard({
               ? isFav
                 ? deleteFav(id)
                 : addFav(id)
-              : alert("Please login");
+              : navigate("/login");
             setIsFav(!isFav);
           }}
         >
@@ -86,11 +86,6 @@ export default function ProductCard({
             </svg>
           )}
         </div>
-      </div>
-
-      <div className="card-over">
-        <h5>{category} </h5>
-        <p>{description} </p>
       </div>
     </div>
   );
