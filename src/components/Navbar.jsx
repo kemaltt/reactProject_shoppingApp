@@ -72,13 +72,13 @@ export default function Navbar() {
             </div>
           ) : (
             <>
-              <li className="nav-item ">
-                <a className="nav-link" href="/reactProject_shoppingApp/login">
+              <li onClick={() => navigate("/login")} className="nav-item ">
+                <a className="nav-link" href="#">
                   Login
                 </a>
               </li>
-              <li className="nav-item ">
-                <a className="nav-link" href="/signup">
+              <li onClick={() => navigate("/signup")} className="nav-item ">
+                <a className="nav-link" href="#">
                   Register
                 </a>
               </li>
