@@ -20,7 +20,7 @@ export default function Navbar() {
 
         <div className="navbar-list d-flex">
           <li className="nav-item ">
-            <a className="nav-link " href="/">
+            <a className="nav-link " href="/reactProject_shoppingApp/">
               Home
             </a>
           </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item ">
                 <a className="nav-link" href="/signup">
-                  Sign Up
+                  Register
                 </a>
               </li>
             </>
