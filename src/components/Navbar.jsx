@@ -73,9 +73,7 @@ export default function Navbar() {
           ) : (
             <>
               <li onClick={() => navigate("/login")} className="nav-item ">
-                <a className="nav-link" href="">
-                  Login
-                </a>
+                <a className="nav-link">Login</a>
               </li>
               <li onClick={() => navigate("/signup")} className="nav-item ">
                 <a className="nav-link">Register</a>
